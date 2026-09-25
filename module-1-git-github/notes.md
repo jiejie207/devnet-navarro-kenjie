@@ -25,20 +25,20 @@ is like playing minecraft where everyone can access your own world, like collabo
 
 ## Walking through what I did
 
-[Describe, step by step, a real branch → commit → push → PR you did. Include the actual commands you used.]
-
-I edit my notes.md file directly on the main branch. After saving my changes, 
+I edit my notes.md file directly on the main branch. After saving my changes, I git add module-1-git-github/notes.md, commit the changes with message, and push them to Github.
 
 ```
-# paste your actual commands here
+git add .\module-1-git-github/notes.md
+git commit -m "updated Notes.md"
+git push origin main
+git status
 ```
 
 ---
 
 ## A mistake I made (or one I want to avoid)
 
-[What tripped you up? A confusing error message, committing to the wrong branch, a merge conflict — explain it so a classmate reading this avoids the same mistake.]
-
+editing this on my main branch. for this activity it work because i was the only one using it, but if there's other people it's better to create a separate branch first then do the work.
 ---
 
 ## How this connects to something else
