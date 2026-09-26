@@ -20,8 +20,8 @@ def add_device(device_list):
     device_name = input("Device Name:")
     ip_add = input("IP Address:")
     status = input("Status (Active/Inactive):")
-
-
+    
+    return
 
 def view_devices(device_list):
     # loop through and print every device — handle empty list
@@ -37,7 +37,7 @@ def find_device(device_list):
 
 # BONUS (optional)
 def remove_device(device_list):
-    # your code here
+    devices.remove()
     pass
 
 def main():
