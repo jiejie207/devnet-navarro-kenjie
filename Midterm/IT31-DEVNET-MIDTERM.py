@@ -13,11 +13,15 @@ def display_menu():
     print("4. Find a device by name")
     print("5. Exit")
     print("Choose an option:")
-    
-display_menu()
+
+    return
 
 def add_device(device_list):
-    pass
+    device_name = input("Device Name:")
+    ip_add = input("IP Address:")
+    status = input("Status (Active/Inactive):")
+
+
 
 def view_devices(device_list):
     # loop through and print every device — handle empty list
@@ -44,3 +48,4 @@ def main():
         # set running = False when the user picks Exit
 
 main()
+
