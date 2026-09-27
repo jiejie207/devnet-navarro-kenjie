@@ -6,18 +6,18 @@ Date: 9/27/2026
 ============================================
 WHAT DID YOU BUILD? (explain in your own words)
 ============================================
-[Paste your working script below first, then come back and explain
-it here: what does your script do, and what rule did you use to
-sort the files? e.g. by extension, by name, by date, etc.]
+The only thing i build is a script that checks if a kind of files exist in my current folder.
+for example, if i have a .jpg file, it will print "the file exists!", and if i don't have a .jpg file,
+it will print "the file does not exist.".
 
 
 ============================================
 KEY VOCABULARY
 ============================================
-- os module:
-- shutil module:
-- file path:
-- directory:
+- os module: tools for using files, creating directories, and listing files.
+- shutil module: tools for copying and removing files.
+- file path: location of the file in the computer.
+- directory: another term for folder.
 (add more as needed)
 
 
@@ -30,16 +30,23 @@ Paste the code you already wrote for this activity below.
 import os
 import shutil
 
-# --- paste your existing code here ---
+Files_Types = [".jpg, .png, .pdf, .txt, .pptx, .mp4, .zip"]
+
+for file in os.listdir():
+    if file.endswith(tuple(Files_Types)):
+        print("The file exists!")
+        break
+    else:
+        print("The file does not exist.")
+
 
 
 """
-============================================
 A MISTAKE I MADE (or one I want to avoid)
 ============================================
-[what tripped you up while building this? e.g. a path that didn't
-exist, a file that got overwritten, something that didn't work the
-way you expected at first]
+At first, I thought that my code will work perfectly, because theres no red lines, 
+but when I run it, the Terminal print "TypeError: endswith first arg must be str or a tuple of str, not list"
+then i just out tuple on before the (Files_types) and it works.
 
 
 ============================================
