@@ -90,4 +90,4 @@ for i in range(3):
         print("Mali ka ya")
 
 else:
-    print("Talo kana ya", answer)
+    print("Talo kana ya", "," , "Ang tamang sagot ay", answer)
